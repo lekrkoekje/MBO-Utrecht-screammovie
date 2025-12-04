@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scream 7</title>
-    <link rel="stylesheet" href="../css/home.css">
-    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Scream 7</title>
 </head>
 
 <body>
+    <!-- Header laden -->
     <div id="main-header"></div>
     <script>
         fetch("./header.html")
@@ -21,29 +20,25 @@
             });
     </script>
 
-
-    <video autoplay muted loop playsinline class="video">
-        <source src="../img/trailer.mp4" type="video/mp4">
-    </video>
-
-    <div id="videoPopup" class="popup">
-        <!-- → dit is de hele popup die over de website heen komt -->
-
-        <div class="popup-content">
-            <!-- → het blok in het midden waar de video in zit -->
-
-            <span id="closePopup" class="close">&times;</span>
-            <!-- → het kruisje om de popup te sluiten -->
-
-            <iframe id="trailer" width="800" height="500" src="https://www.youtube.com/embed/UJrghaPJ0RY"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-            </iframe>
-            <!-- → de YouTube video die in de popup wordt afgespeeld -->
-
+    <section class="hero">
+        <div class="size-limit">
+            <div class="video-bg">
+                <iframe
+                    src="https://www.youtube.com/embed/UJrghaPJ0RY?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&playsinline=1&loop=1&playlist=UJrghaPJ0RY"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            </div>
         </div>
-    </div>
 
-    <script src="../js/home.js"></script>
+        <div class="hero-content">
+            <img src="../img/logo.png" class="hero-logo">
+            <h2>ONLY IN THEATRES FEBRUARY 27, 2026</h2>
+
+            <a href="#trailer" class="hero-btn">Watch Trailer</a>
+        </div>
+    </section>
+
+
 </body>
 
 </html>
