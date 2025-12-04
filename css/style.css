@@ -1,0 +1,55 @@
+@font-face {
+    font-family: ScreamFont;
+    src: url(../fonts/Scream-Real.ttf) format('truetype');
+    src: url(../fonts/Scream-Real.otf) format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+
+#main-header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+}
+
+.nav-links {
+    width: 100%;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
