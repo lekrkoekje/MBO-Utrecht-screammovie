@@ -30,12 +30,14 @@ body {
 #main-header {
     background-color: #000000;
     color: #fff;
-    padding: 1rem;
+    padding: 0.8rem;
     display: flex;
     align-items: center;
     width: 100%;
     position: fixed;
     z-index: 99999;
+    font-family: ScreamFont;
+    letter-spacing: 0.05rem;
 }
 
 
@@ -46,7 +48,7 @@ body {
 
 .logo-img {
     width: 100px;
-    height: auto;
+    vertical-align: middle;
 }
 
 .nav-links {
