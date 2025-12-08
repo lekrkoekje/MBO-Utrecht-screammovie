@@ -29,16 +29,12 @@
     }
 }
 
-/* Schermen die hoger/smal zijn (telefoon in portret, smalle vensters) */
 @media (max-aspect-ratio: 16/9) {
     .video-bg iframe {
-        width: 177.78vh;   /* 100 * 16 / 9 → houdt 16:9 */
-        height: 100vh;     /* hoogte vult volledig */
+        width: 177.78vh;
+        height: 100vh;
     }
 }
-
-
-
 
 .hero-content {
     position: relative;
