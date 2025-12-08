@@ -18,11 +18,27 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    aspect-ratio: 16/9;
-    width: 100vw;
-    min-height: 100vh;
     transform: translate(-50%, -50%);
+    pointer-events: none;
 }
+
+@media (min-aspect-ratio: 16/9) {
+    .video-bg iframe {
+        width: 100vw;
+        height: 56.25vw;
+    }
+}
+
+/* Schermen die hoger/smal zijn (telefoon in portret, smalle vensters) */
+@media (max-aspect-ratio: 16/9) {
+    .video-bg iframe {
+        width: 177.78vh;   /* 100 * 16 / 9 → houdt 16:9 */
+        height: 100vh;     /* hoogte vult volledig */
+    }
+}
+
+
+
 
 .hero-content {
     position: relative;
