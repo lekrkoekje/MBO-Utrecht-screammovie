@@ -91,3 +91,9 @@
     z-index: 3;
     width: 100vw;
 }
+
+.red-box p {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
