@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/faq.css">
+    <title>Scream VII</title>
+</head>
+
+<body>
+    <!-- Header laden -->
+    <div id="main-header"></div>
+    <script>
+        fetch("./header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("main-header").innerHTML = data;
+            });
+    </script>
+
+ <div class="form-container">
+        <h1 class="form-title">Stel je vraag</h1>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="question">Vraag</label>
+                <textarea id="question" name="question" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Verstuur</button>
+        </form>
+
+        <div class="success-message" id="successMessage">
+            ✓ Je vraag is succesvol verzonden!
+        </div>
+    </div>
+</body>
+
+</html>
