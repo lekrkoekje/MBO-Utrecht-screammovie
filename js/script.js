@@ -1,6 +1,8 @@
+// js/script.js
 const form = document.getElementById('contactForm');
 const successMessage = document.getElementById('successMessage');
 
+// Formulier verzenden
 form.addEventListener('submit', function (e) {
     e.preventDefault();
 
