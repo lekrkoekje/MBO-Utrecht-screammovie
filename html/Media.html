@@ -21,6 +21,16 @@
         </div>
     </header>
 
+        <!-- Header laden -->
+    <div id="main-header"></div>
+    <script>
+        fetch("./header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("main-header").innerHTML = data;
+            });
+    </script>
+
     <div class="row">
 
         <!-- Kevin Williamson -->
