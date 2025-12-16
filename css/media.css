@@ -15,19 +15,23 @@ h3{
     height: 320px;      
     object-fit: cover;
     margin: 10px 0;
+    display: block;
+    flex-shrink: 0;
 }
-
-@media (max-width: 576px) {
-    .row > [class*="col-"] {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
-
 
 @media (max-width: 768px) {
     .row > [class*="col-"] {
         flex: 0 0 100%;
         max-width: 100%;
     }
+}
+
+.col-3 {
+    display: flex;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
