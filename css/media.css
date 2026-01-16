@@ -38,3 +38,29 @@ h3 {
         max-width: 33%;
     }
 }
+
+
+.image-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.img-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-wrapper:hover .img-overlay {
+    opacity: 1;
+}
