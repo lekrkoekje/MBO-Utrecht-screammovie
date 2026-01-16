@@ -25,9 +25,16 @@ h3 {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 1000px) {
     .row > [class*="col-"] {
-        flex: 0 0 100%;
-        max-width: 100%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+    .row > [class*="col-"] {
+        flex: 0 0 33%;
+        max-width: 33%;
     }
 }
