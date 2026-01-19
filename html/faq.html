@@ -19,47 +19,62 @@
                 document.getElementById("main-header").innerHTML = data;
             });
     </script>
-    <!-- Contact sectie -->
-    <div class="form-container">
-        <h1 class="form-title">Vraag indienen</h1>
-        <form id="contactForm">
-            <!-- Verplicht veld -->
-            <div class="form-group">
-                <label for="name">Naam <span class="required">*</span></label>
-                <input type="text" id="name" name="name" autocomplete="name" required>
-            </div>
-
-            <!-- Verplicht veld -->
-            <div class="form-group">
-                <label for="email">Email <span class="required">*</span></label>
-                <input type="email" id="email" name="email" autocomplete="email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Telefoonnummer</label>
-                <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel"
-                    pattern="[0-9+()\\-\\s]{6,}">
-            </div>
-
-            <!-- Verplicht veld -->
-            <div class="form-group">
-                <label for="question">Vraag <span class="required">*</span></label>
-                <textarea id="question" name="question" required></textarea>
-            </div>
-
-            <!-- Bevestigingsknop -->
-            <button type="submit" class="submit-btn">Verstuur</button>
-        </form>
-        <!-- Foutbericht -->
-        <div class="error-message" id="errorMessage">
-            ✗ Je vraag kon niet worden ingediend, probeer het later opnieuw.
+    <!-- Two-column layout: info left, form right -->
+    <section class="faq-layout">
+        <!-- Left column intro text -->
+        <div class="faq-hero-text">
+            <p class="eyebrow">HULP & ANTWOORDEN</p>
+            <h1>FAQ</h1>
+            <p class="intro">
+                Heb je een vraag over Scream VII? Stuur je vraag in en we helpen je verder met
+                updates, tickets en praktische info.
+            </p>
         </div>
-        <!-- Succesbericht -->
-        <div class="success-message" id="successMessage">
-            Je vraag is succesvol verzonden!
-        </div>
-    </div>
 
+        <!-- Contact sectie -->
+        <div class="form-container">
+            <h1 class="form-title">Vraag indienen</h1>
+            <!-- Contact form -->
+            <form id="contactForm">
+                <!-- Verplicht veld -->
+                <div class="form-group">
+                    <label for="name">Naam <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                </div>
+
+                <!-- Verplicht veld -->
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefoonnummer</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel"
+                        pattern="[0-9+()\\-\\s]{6,}">
+                </div>
+
+                <!-- Verplicht veld -->
+                <div class="form-group">
+                    <label for="question">Vraag <span class="required">*</span></label>
+                    <textarea id="question" name="question" required></textarea>
+                </div>
+
+                <!-- Bevestigingsknop -->
+                <button type="submit" class="submit-btn">Verstuur</button>
+            </form>
+            <!-- Foutbericht -->
+            <div class="error-message" id="errorMessage">
+                バ- Je vraag kon niet worden ingediend, probeer het later opnieuw.
+            </div>
+            <!-- Succesbericht -->
+            <div class="success-message" id="successMessage">
+                Je vraag is succesvol verzonden!
+            </div>
+        </div>
+    </section>
+
+    <!-- Form handling script -->
     <script src="../js/script.js"></script>
 </body>
 

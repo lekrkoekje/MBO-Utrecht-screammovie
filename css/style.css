@@ -1,3 +1,4 @@
+/* Brand font */
 @font-face {
     font-family: ScreamFont;
     src: url(../fonts/Scream-Real.ttf) format('truetype');
@@ -6,27 +7,32 @@
     font-style: normal;
 }
 
+/* Global reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Hide scrollbars */
 html {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
+/* Hide scrollbars (WebKit) */
 html::-webkit-scrollbar {
     display: none;
 }
 
+/* Base page colors */
 body {
     color: white;
     background-color: #121212;
     overflow-x: hidden;
 }
 
+/* Fixed site header */
 #main-header {
     background-color: #000000;
     color: #fff;
@@ -40,31 +46,48 @@ body {
     letter-spacing: 0.05rem;
 }
 
-
+/* Logo container */
 .logo {
     font-size: 1.3rem;
     font-weight: bold;
 }
 
+/* Logo image */
 .logo-img {
     width: 100px;
     vertical-align: middle;
+    transition: transform 0.25s ease, filter 0.25s ease;
 }
 
+/* Logo hover glow */
+.logo-img:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 10px rgba(255, 50, 50, 0.65));
+}
+
+/* Navigation container */
 .nav-links {
     width: 100%;
     text-align: right;
 }
 
+/* Navigation links */
 .nav-links a {
     color: #fff;
     text-decoration: none;
     margin-left: 20px;
     font-size: 0.95rem;
     font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
 }
 
+/* Navigation hover glow */
 .nav-links a:hover {
-    text-decoration: underline;
+    transform: scale(1.06);
+    text-shadow:
+        0 0 10px rgba(255, 50, 50, 0.7),
+        0 0 18px rgba(255, 50, 50, 0.55),
+        0 0 28px rgba(255, 50, 50, 0.4);
 }
 

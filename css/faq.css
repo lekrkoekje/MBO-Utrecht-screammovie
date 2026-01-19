@@ -1,6 +1,57 @@
+/* Solid base to avoid white overscroll */
+html,
+body {
+    background-color: #121212;
+}
+
+/* Page gradient */
+body {
+    background-image: linear-gradient(180deg, #1b0a0a 0%, #121212 85%);
+}
+
+/* Two-column FAQ layout */
+.faq-layout {
+    max-width: 1100px;
+    margin: 20px auto 20px;
+    padding: 120px 8vw 30px;
+    display: grid;
+    grid-template-columns: minmax(260px, 1fr) minmax(320px, 1.1fr);
+    gap: 32px;
+    align-items: start;
+}
+
+/* Left column content width */
+.faq-hero-text {
+    max-width: 520px;
+}
+
+/* Eyebrow label */
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ff3232;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+/* Main headline */
+.faq-layout h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+/* Intro paragraph */
+.intro {
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 0;
+}
+
+/* Form card */
 .form-container {
-    max-width: 600px;
-    margin: 40px auto;
+    max-width: 640px;
+    margin: 0;
     background: #111;
     border-radius: 12px;
     padding: 40px;
@@ -8,6 +59,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 }
 
+/* Section title */
 .form-title {
     text-align: center;
     font-size: 28px;
@@ -17,10 +69,12 @@
     color: #ff3232;
 }
 
+/* Form spacing */
 .form-group {
     margin-bottom: 24px;
 }
 
+/* Form labels */
 .form-group label {
     display: block;
     margin-bottom: 8px;
@@ -35,6 +89,7 @@
     color: #ff3232;
 }
 
+/* Textarea styling */
 .form-group textarea {
     width: 100%;
     padding: 12px 16px;
@@ -49,6 +104,7 @@
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Input styling */
 .form-group input {
     width: 100%;
     padding: 12px 16px;
@@ -61,18 +117,21 @@
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Input focus */
 .form-group input:focus {
     outline: none;
     border-color: #ff3232;
     box-shadow: 0 0 10px rgba(255, 50, 50, 0.3);
 }
 
+/* Textarea focus */
 .form-group textarea:focus {
     outline: none;
     border-color: #ff3232;
     box-shadow: 0 0 10px rgba(255, 50, 50, 0.3);
 }
 
+/* Submit button */
 .submit-btn {
     width: 100%;
     padding: 14px 28px;
@@ -89,12 +148,14 @@
     box-shadow: 0 0 18px rgba(255, 0, 0, 0.45);
 }
 
+/* Submit hover */
 .submit-btn:hover {
     background: #cc0000;
     transform: scale(1.03);
     box-shadow: 0 0 25px rgba(255, 0, 0, 0.65);
 }
 
+/* Success feedback */
 .success-message {
     display: none;
     text-align: center;
@@ -118,12 +179,33 @@
     color: #ff8a8a;
 }
 
+/* Mobile layout */
 @media (max-width: 600px) {
+    .faq-layout {
+        grid-template-columns: 1fr;
+        padding: 100px 20px 24px;
+        text-align: center;
+    }
+
+    .faq-layout h1 {
+        font-size: 36px;
+    }
+
     .form-container {
         padding: 30px 20px;
     }
+
 }
 
+/* Tablet layout */
+@media (max-width: 900px) {
+    .faq-layout {
+        grid-template-columns: 1fr;
+        padding: 100px 6vw 24px;
+    }
+}
+
+/* Allow header to flow on this page */
 #main-header {
     position: static;
 }
