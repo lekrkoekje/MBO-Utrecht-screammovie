@@ -1,15 +1,15 @@
-/* Solid base to avoid white overscroll */
+/* Vaste basis om witte overscroll te voorkomen */
 html,
 body {
     background-color: #121212;
 }
 
-/* Page gradient */
+/* Pagina-verloop */
 body {
     background-image: linear-gradient(180deg, #1b0a0a 0%, #121212 85%);
 }
 
-/* Two-column FAQ layout */
+/* FAQ-indeling met twee kolommen */
 .faq-layout {
     max-width: 1100px;
     margin: 20px auto 20px;
@@ -20,12 +20,12 @@ body {
     align-items: start;
 }
 
-/* Left column content width */
+/* Breedte inhoud linkerkolom */
 .faq-hero-text {
     max-width: 520px;
 }
 
-/* Eyebrow label */
+/* Koplabel */
 .eyebrow {
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -34,21 +34,21 @@ body {
     margin-bottom: 12px;
 }
 
-/* Main headline */
+/* Hoofdtitel */
 .faq-layout h1 {
     font-size: 48px;
     margin-bottom: 16px;
     text-transform: uppercase;
 }
 
-/* Intro paragraph */
+/* Introductie-alinea */
 .intro {
     line-height: 1.6;
     color: #e0e0e0;
     margin-bottom: 0;
 }
 
-/* Form card */
+/* Formulierkaart */
 .form-container {
     max-width: 640px;
     margin: 0;
@@ -59,7 +59,7 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 }
 
-/* Section title */
+/* Sectietitel */
 .form-title {
     text-align: center;
     font-size: 28px;
@@ -69,12 +69,12 @@ body {
     color: #ff3232;
 }
 
-/* Form spacing */
+/* Formulierafstand */
 .form-group {
     margin-bottom: 24px;
 }
 
-/* Form labels */
+/* Formulierlabels */
 .form-group label {
     display: block;
     margin-bottom: 8px;
@@ -84,12 +84,12 @@ body {
     color: #fff;
 }
 
-/* Verplicht veld indicator */
+/* Aanduiding verplicht veld */
 .form-group .required {
     color: #ff3232;
 }
 
-/* Textarea styling */
+/* Tekstvakstijl */
 .form-group textarea {
     width: 100%;
     padding: 12px 16px;
@@ -104,7 +104,7 @@ body {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Input styling */
+/* Invoerveldstijl */
 .form-group input {
     width: 100%;
     padding: 12px 16px;
@@ -117,21 +117,21 @@ body {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Input focus */
+/* Invoerveld-focus */
 .form-group input:focus {
     outline: none;
     border-color: #ff3232;
     box-shadow: 0 0 10px rgba(255, 50, 50, 0.3);
 }
 
-/* Textarea focus */
+/* Tekstvak-focus */
 .form-group textarea:focus {
     outline: none;
     border-color: #ff3232;
     box-shadow: 0 0 10px rgba(255, 50, 50, 0.3);
 }
 
-/* Submit button */
+/* Verzendknop */
 .submit-btn {
     width: 100%;
     padding: 14px 28px;
@@ -148,14 +148,14 @@ body {
     box-shadow: 0 0 18px rgba(255, 0, 0, 0.45);
 }
 
-/* Submit hover */
+/* Zweefeffect op verzendknop */
 .submit-btn:hover {
     background: #cc0000;
     transform: scale(1.03);
     box-shadow: 0 0 25px rgba(255, 0, 0, 0.65);
 }
 
-/* Success feedback */
+/* Succesfeedback */
 .success-message {
     display: none;
     text-align: center;
@@ -167,7 +167,7 @@ body {
     color: #5dff5d;
 }
 
-/* Foutmelding stijl */
+/* Foutmeldingstijl */
 .error-message {
     display: none;
     text-align: center;
@@ -179,7 +179,7 @@ body {
     color: #ff8a8a;
 }
 
-/* Mobile layout */
+/* Mobiele indeling */
 @media (max-width: 600px) {
     .faq-layout {
         grid-template-columns: 1fr;
@@ -197,7 +197,7 @@ body {
 
 }
 
-/* Tablet layout */
+/* Tablet-indeling */
 @media (max-width: 900px) {
     .faq-layout {
         grid-template-columns: 1fr;
@@ -205,7 +205,7 @@ body {
     }
 }
 
-/* Allow header to flow on this page */
+/* Header mag op deze pagina meelopen */
 #main-header {
     position: static;
 }

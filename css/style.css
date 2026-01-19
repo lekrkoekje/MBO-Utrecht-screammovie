@@ -1,38 +1,45 @@
-/* Brand font */
+/* Merklettertype */
 @font-face {
-    font-family: ScreamFont;
-    src: url(../fonts/Scream-Real.ttf) format('truetype');
-    src: url(../fonts/Scream-Real.otf) format('otf');
-    font-weight: normal;
+    font-family: TrajanPro;
+    src: url(../fonts/trajanpro_bold.otf) format('opentype');
+    font-weight: bold;
     font-style: normal;
 }
 
-/* Global reset */
+/* Globale reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Hide scrollbars */
+/* Verberg scrollbalken */
 html {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
-/* Hide scrollbars (WebKit) */
+/* Verberg scrollbalken (WebKit) */
 html::-webkit-scrollbar {
     display: none;
 }
 
-/* Base page colors */
+/* Basiskleuren van de pagina */
 body {
     color: white;
     background-color: #121212;
     overflow-x: hidden;
+    font-family: TrajanPro;
 }
 
-/* Fixed site header */
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+}
+
+/* Vaste siteheader */
 #main-header {
     background-color: #000000;
     color: #fff;
@@ -42,36 +49,35 @@ body {
     width: 100%;
     position: fixed;
     z-index: 99999;
-    font-family: ScreamFont;
     letter-spacing: 0.05rem;
 }
 
-/* Logo container */
+/* Logo-container */
 .logo {
     font-size: 1.3rem;
     font-weight: bold;
 }
 
-/* Logo image */
+/* Logo-afbeelding */
 .logo-img {
     width: 100px;
     vertical-align: middle;
     transition: transform 0.25s ease, filter 0.25s ease;
 }
 
-/* Logo hover glow */
+/* Logo-gloed bij aanwijzen */
 .logo-img:hover {
     transform: scale(1.08);
     filter: drop-shadow(0 0 10px rgba(255, 50, 50, 0.65));
 }
 
-/* Navigation container */
+/* Navigatie-container */
 .nav-links {
     width: 100%;
     text-align: right;
 }
 
-/* Navigation links */
+/* Navigatielinks */
 .nav-links a {
     color: #fff;
     text-decoration: none;
@@ -82,7 +88,7 @@ body {
     transition: transform 0.2s ease, text-shadow 0.2s ease;
 }
 
-/* Navigation hover glow */
+/* Navigatie-gloed bij aanwijzen */
 .nav-links a:hover {
     transform: scale(1.06);
     text-shadow:

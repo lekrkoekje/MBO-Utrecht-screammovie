@@ -43,7 +43,7 @@ h3 {
     color: #ff3232;
 }
 
-/* Kaartlayout voor elk media-item */
+/* Kaartindeling voor elk media-item */
 .block {
     background: #111;
     border: 1px solid #333;
@@ -62,7 +62,7 @@ h3 {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
 }
 
-/* Equal image sizing */
+/* Gelijke afbeeldingsgrootte */
 .equal-img {
     width: 100%;
     height: 320px;
