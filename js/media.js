@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // click functies
-    document.body.addEventListener("click", function(e) {
-        // de vergrotte afbeeling worden geselecteerd
-        if (e.target.classList.contains("modal-img")) {
-            const link = document.createElement("a");
-            link.href = e.target.src;
-            link.download = e.target.src.split("/").pop();
-            link.click();
-        }
+    document.body.addEventListener("click", function (e) {
+        const wrapper = e.target.closest(".image-wrapper");
+        if (!wrapper) return;
+
+        const img = wrapper.querySelector(".modal-img");
+        if (!img) return;
+
+        const link = document.createElement("a");
+        link.href = img.src;
+        link.download = img.src.split("/").pop();
+        link.click();
     });
 });
