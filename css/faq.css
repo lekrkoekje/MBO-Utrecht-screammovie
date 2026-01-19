@@ -30,6 +30,11 @@
     color: #fff;
 }
 
+/* Verplicht veld indicator */
+.form-group .required {
+    color: #ff3232;
+}
+
 .form-group textarea {
     width: 100%;
     padding: 12px 16px;
@@ -42,6 +47,24 @@
     min-height: 120px;
     resize: vertical;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    background: #000;
+    border: 1px solid #444;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #ff3232;
+    box-shadow: 0 0 10px rgba(255, 50, 50, 0.3);
 }
 
 .form-group textarea:focus {
@@ -81,6 +104,18 @@
     border-radius: 8px;
     margin-top: 20px;
     color: #5dff5d;
+}
+
+/* Foutmelding stijl */
+.error-message {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background: #3b0a0a;
+    border: 1px solid #8a1212;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #ff8a8a;
 }
 
 @media (max-width: 600px) {
