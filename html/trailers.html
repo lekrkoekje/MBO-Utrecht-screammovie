@@ -10,6 +10,18 @@
     <title>Scream 7</title>
 </head>
 <body>
+    <!-- Body-class voor media-achtergrondstijl -->
+    <!-- Header laden -->
+    <div id="main-header"></div>
+    <script>
+        fetch("./header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("main-header").innerHTML = data;
+            });
+    </script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
